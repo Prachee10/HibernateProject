@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd//hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.saran.model.UserDetails" table="user_hbm">
+		<meta attribute="class-description">This class contains the employee details</meta>
+		<id name="userId" type="int" column="user_id">
+			<generator class="native" />
+		</id>
+		<property name="userName" column="user_name" type="string" />
+	</class>
+</hibernate-mapping>
